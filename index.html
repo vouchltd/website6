@@ -115,6 +115,77 @@
     border: 1.5px solid rgba(243,236,218,0.5);
     color: #F3ECDA;
   }
+
+  /* Audit lead-capture form */
+  #audit-form-card, #audit-thankyou {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-align: left;
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  }
+  .audit-field { margin-bottom: 20px; }
+  .audit-field:last-of-type { margin-bottom: 0; }
+  .audit-label {
+    display: block;
+    color: #6B7280;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .audit-input, .audit-select {
+    display: block;
+    width: 100%;
+    border: 1px solid #D7D9D6;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    background: #FFFFFF;
+    color: #22201B;
+    font-family: inherit;
+    transition: border-color 0.15s ease;
+  }
+  .audit-input:focus, .audit-select:focus {
+    outline: none;
+    border: 2px solid #2D5F3F;
+    padding: 11px 13px;
+  }
+  .audit-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%236B7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+  .audit-select:focus { padding-right: 35px; }
+  .audit-input.is-error, .audit-select.is-error { border-color: #A6432E; }
+  .audit-input.is-error:focus, .audit-select.is-error:focus { border: 2px solid #A6432E; padding: 11px 13px; }
+  .audit-error-msg { color: #A6432E; font-size: 12px; margin-top: 4px; }
+  .audit-submit {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    background: #2D5F3F;
+    color: #FFFFFF;
+    font-family: inherit;
+    transition: background-color 0.15s ease;
+  }
+  .audit-submit:hover:not(:disabled) { background: #234A33; }
+  .audit-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+  .audit-hint { text-align: center; color: #9CA3A0; font-size: 12px; margin-top: 10px; }
+  .audit-formerror { color: #A6432E; font-size: 13px; margin-top: 12px; text-align: center; }
+  #audit-thankyou p { color: #2D5F3F; font-weight: 700; font-size: 17px; line-height: 1.6; text-align: center; }
 </style>
 
 <body class="bg-paper text-charcoal antialiased">
@@ -321,20 +392,10 @@
       <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] text-center reveal" style="transition-delay:0.05s">Two simple charges. Nothing hidden.</h2>
 
       <div class="mt-16 grid md:grid-cols-2 gap-7">
-        <div class="rounded-2xl border border-charcoal/15 p-9 card-hover shadow-card reveal" style="transition-delay:0.05s">
-          <p class="font-mono text-xs tracking-[0.15em] uppercase text-clay mb-3">One-time</p>
-          <h3 class="font-display text-3xl mb-5">Setup</h3>
-          <p class="text-charcoal/75 leading-[1.7] mb-6">A full audit and complete optimization of your Google Business Profile, done once and done right.</p>
-          <ul class="space-y-3 text-sm text-charcoal/80">
-            <li class="flex gap-3"><span class="text-alpine">—</span>Category, hours, and service corrections</li>
-            <li class="flex gap-3"><span class="text-alpine">—</span>Photo upload and profile cleanup</li>
-            <li class="flex gap-3"><span class="text-alpine">—</span>Review-generation system installed</li>
-          </ul>
-          <a href="#audit" class="btn-secondary mt-8 inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold">Get a quote</a>
-        </div>
-        <div class="rounded-2xl bg-charcoal text-paper p-9 shadow-deep grain grain-dark card-hover reveal" style="transition-delay:0.15s">
+        <div class="rounded-2xl bg-charcoal text-paper p-9 shadow-deep grain grain-dark card-hover reveal" style="transition-delay:0.05s">
           <p class="font-mono text-xs tracking-[0.15em] uppercase text-sage mb-3">Monthly</p>
-          <h3 class="font-display text-3xl mb-5">Management</h3>
+          <h3 class="font-display text-3xl mb-2">Management</h3>
+          <p class="font-mono text-2xl text-paper mb-5">$129.99<span class="text-sm text-paper/50"> /mo</span></p>
           <p class="text-paper/75 leading-[1.7] mb-6">Ongoing upkeep and review management, so your profile stays sharp without a second thought.</p>
           <ul class="space-y-3 text-sm text-paper/80">
             <li class="flex gap-3"><span class="text-sage">—</span>Weekly posts and photo refreshes</li>
@@ -342,6 +403,18 @@
             <li class="flex gap-3"><span class="text-sage">—</span>Monthly report, written in plain English</li>
           </ul>
           <a href="#audit" class="mt-8 inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold bg-paper text-charcoal transition-transform duration-300 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ochre focus-visible:outline-offset-2">Get a quote</a>
+        </div>
+        <div class="rounded-2xl border border-charcoal/15 p-9 card-hover shadow-card reveal" style="transition-delay:0.15s">
+          <p class="font-mono text-xs tracking-[0.15em] uppercase text-clay mb-3">Optional</p>
+          <h3 class="font-display text-3xl mb-2">Add-On Services</h3>
+          <p class="font-mono text-2xl text-alpine mb-5">$59.99<span class="text-sm text-charcoal/50"> /mo per platform</span></p>
+          <p class="text-charcoal/75 leading-[1.7] mb-6">Beyond Google — we'll manage your other listings with the same care, so reviews everywhere get a real response.</p>
+          <ul class="space-y-3 text-sm text-charcoal/80">
+            <li class="flex gap-3"><span class="text-alpine">—</span>Yelp Business Profile management</li>
+            <li class="flex gap-3"><span class="text-alpine">—</span>Facebook Business Profile management</li>
+            <li class="flex gap-3"><span class="text-alpine">—</span>Add any combination — billed per extra platform</li>
+          </ul>
+          <a href="#audit" class="btn-secondary mt-8 inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold">Get a quote</a>
         </div>
       </div>
       <p class="mt-6 text-center text-sm text-charcoal/50 reveal">Month-to-month management. Cancel anytime — no contracts you can't read.</p>
@@ -399,7 +472,59 @@
         <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl tracking-[-0.02em] reveal">This is Vouch.</h2>
         <p class="mt-6 text-lg text-paper/75 max-w-xl mx-auto leading-[1.7] reveal" style="transition-delay:0.05s">Straightforward help for Long Beach businesses who'd rather be run well than look flashy.</p>
         <div class="mt-10 reveal" style="transition-delay:0.1s">
-          <a href="mailto:hello@vouchlb.com" class="btn-primary inline-flex items-center rounded-full px-8 py-4 font-semibold text-base bg-paper text-alpinedark hover:bg-white">Get your free profile audit</a>
+          <form id="audit-form" novalidate>
+            <div id="audit-form-card">
+              <div class="audit-field">
+                <label class="audit-label" for="audit-name">Your Name</label>
+                <input class="audit-input" type="text" id="audit-name" name="name" required>
+                <p class="audit-error-msg hidden" id="audit-error-name"></p>
+              </div>
+              <div class="audit-field">
+                <label class="audit-label" for="audit-business_name">Business Name</label>
+                <input class="audit-input" type="text" id="audit-business_name" name="business_name" required>
+                <p class="audit-error-msg hidden" id="audit-error-business_name"></p>
+              </div>
+              <div class="audit-field">
+                <label class="audit-label" for="audit-category">Business Category</label>
+                <select class="audit-select" id="audit-category" name="category" required>
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="Restaurant / Café">Restaurant / Café</option>
+                  <option value="Nail Salon / Spa">Nail Salon / Spa</option>
+                  <option value="Auto Repair">Auto Repair</option>
+                  <option value="Gym / Fitness">Gym / Fitness</option>
+                  <option value="Hair Salon / Barber">Hair Salon / Barber</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="audit-error-msg hidden" id="audit-error-category"></p>
+              </div>
+              <div class="audit-field">
+                <label class="audit-label" for="audit-address">Business Address</label>
+                <input class="audit-input" type="text" id="audit-address" name="address" placeholder="123 Main St, Long Beach, CA" required>
+                <p class="audit-error-msg hidden" id="audit-error-address"></p>
+              </div>
+              <div class="audit-field">
+                <label class="audit-label" for="audit-phone">Phone Number</label>
+                <input class="audit-input" type="tel" id="audit-phone" name="phone" required>
+                <p class="audit-error-msg hidden" id="audit-error-phone"></p>
+              </div>
+              <div class="audit-field">
+                <label class="audit-label" for="audit-email">Email Address</label>
+                <input class="audit-input" type="email" id="audit-email" name="email" required>
+                <p class="audit-error-msg hidden" id="audit-error-email"></p>
+              </div>
+              <div class="audit-field">
+                <label class="audit-label" for="audit-maps_link">Google Maps Link</label>
+                <input class="audit-input" type="url" id="audit-maps_link" name="maps_link" placeholder="Paste your Google Maps link (optional — helps us find you faster)">
+                <p class="audit-error-msg hidden" id="audit-error-maps_link"></p>
+              </div>
+              <button type="submit" class="audit-submit" id="audit-submit">Get My Free Audit</button>
+              <p class="audit-formerror hidden" id="audit-form-error">Something went wrong — please email us directly at hello@vouchlb.com</p>
+              <p class="audit-hint">You'll receive your free audit within 24 hours. No spam, ever.</p>
+            </div>
+          </form>
+          <div id="audit-thankyou" class="hidden">
+            <p>We're on it. You'll have your free audit within 24 hours. We'll reach out to <span id="audit-thankyou-email"></span> or call <span id="audit-thankyou-phone"></span>.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -477,5 +602,91 @@
         panel.style.maxHeight = !expanded ? panel.scrollHeight + 'px' : null;
       });
     });
+
+    // audit lead capture form
+    (function () {
+      const form = document.getElementById('audit-form');
+      if (!form) return;
+
+      const submitBtn = document.getElementById('audit-submit');
+      const formError = document.getElementById('audit-form-error');
+      const thankYou = document.getElementById('audit-thankyou');
+      const fields = ['name', 'business_name', 'category', 'address', 'phone', 'email', 'maps_link'];
+
+      function setError(field, message) {
+        const input = form.elements[field];
+        const errorEl = document.getElementById('audit-error-' + field);
+        if (message) {
+          input.classList.add('is-error');
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+        } else {
+          input.classList.remove('is-error');
+          errorEl.textContent = '';
+          errorEl.classList.add('hidden');
+        }
+      }
+
+      function validate() {
+        let valid = true;
+        const data = {};
+        fields.forEach((f) => { data[f] = form.elements[f].value.trim(); });
+
+        if (!data.name) { setError('name', 'Please enter your name.'); valid = false; }
+        else setError('name', '');
+
+        if (!data.business_name) { setError('business_name', 'Please enter your business name.'); valid = false; }
+        else setError('business_name', '');
+
+        if (!data.category) { setError('category', 'Please select a category.'); valid = false; }
+        else setError('category', '');
+
+        if (!data.address) { setError('address', 'Please enter your business address.'); valid = false; }
+        else setError('address', '');
+
+        const phoneDigits = data.phone.replace(/\D/g, '');
+        if (!data.phone) { setError('phone', 'Please enter your phone number.'); valid = false; }
+        else if (phoneDigits.length !== 10) { setError('phone', 'Enter a valid 10-digit US phone number.'); valid = false; }
+        else setError('phone', '');
+
+        if (!data.email) { setError('email', 'Please enter your email address.'); valid = false; }
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { setError('email', 'Enter a valid email address.'); valid = false; }
+        else setError('email', '');
+
+        if (data.maps_link && !/^https?:\/\/.+/i.test(data.maps_link)) { setError('maps_link', 'Enter a valid URL starting with http:// or https://.'); valid = false; }
+        else setError('maps_link', '');
+
+        return { valid, data };
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        formError.classList.add('hidden');
+
+        const { valid, data } = validate();
+        if (!valid) return;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        fetch('https://formspree.io/f/mrewovza', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        })
+          .then((res) => {
+            if (!res.ok) throw new Error('Formspree error');
+            document.getElementById('audit-thankyou-email').textContent = data.email;
+            document.getElementById('audit-thankyou-phone').textContent = data.phone;
+            form.classList.add('hidden');
+            thankYou.classList.remove('hidden');
+          })
+          .catch(() => {
+            formError.classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Get My Free Audit';
+          });
+      });
+    })();
   </script>
 </body>
