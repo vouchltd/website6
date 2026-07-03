@@ -1,0 +1,161 @@
+================================================================
+VOUCH LTD. — BRAND GUIDELINES
+Google Business Profile Optimization & Review Management
+Long Beach, California
+================================================================
+
+Last updated: July 2026
+
+
+1. WHO WE ARE
+----------------------------------------------------------------
+Vouch Ltd. helps local small businesses in Long Beach, CA get
+found, get chosen, and get reviewed. We optimize Google Business
+Profiles and manage customer reviews using smart automation, so
+owners can focus on running their business instead of fighting
+with their online presence.
+
+We are built for owners who are skeptical of agencies that
+overpromise. Everything about our brand should feel credible,
+grounded, and straightforward.
+
+
+2. WHAT WE DO
+----------------------------------------------------------------
+Core services:
+- Google Business Profile setup, cleanup, and optimization
+- Ongoing profile management (photos, posts, Q&A, categories)
+- Review management: monitoring, professional responses, and
+  ethical review-generation systems
+
+Pricing model:
+- One-time setup fee (profile audit + full optimization)
+- Recurring monthly management fee (ongoing upkeep + reviews)
+
+Behind the scenes, the work is powered by an AI agent system
+(prospecting and review-response automation). IMPORTANT: this
+infrastructure stays internal. Client-facing materials talk about
+benefits and results, never about the tech stack.
+
+
+3. WHO WE SERVE
+----------------------------------------------------------------
+Local small business owners in Long Beach and surrounding areas:
+restaurants, gyms, salons, auto shops, trades, and other
+brick-and-mortar or service businesses.
+
+They are busy, practical, and often not tech-savvy. Many have
+been burned by marketing agencies before. They respond to plain
+language, honest math (star ratings, review counts, search
+visibility), and proof — not jargon or hype.
+
+
+4. BRAND VALUES
+----------------------------------------------------------------
+- Trust first. The name is Vouch for a reason — we vouch for our
+  clients, and our conduct should make clients vouch for us.
+- No overpromising. We never guarantee specific results in
+  contracts or conversations.
+- Respect for security. We NEVER ask clients for passwords.
+  Access is granted through the Google Business Profile Manager
+  role only. This is a hard rule and a selling point.
+- Sell honestly, build reliably. Value is proven before it is
+  automated.
+
+
+5. COLOR PALETTE
+----------------------------------------------------------------
+The palette is strictly alpine green + charcoal + warm clay/ochre.
+NO purple. NO blue. NO gradients of either. This is a hard rule
+across all materials — print, web, decks, and documents.
+
+PRIMARY
+  Alpine Green   #2D5F3F   Headers, CTAs, primary brand color
+  Charcoal       #2A2D2E   Body text, banners, dark surfaces
+                            (used in place of navy/black)
+
+SECONDARY
+  Sage           #5C9C6B   Lighter green support tone
+
+WARM ACCENTS (use one at a time, never both in the same element)
+  Clay           #A6432E   Issue callouts, urgent highlights
+                            (used instead of a stock red)
+  Ochre          #A87F2A   Borderline/amber states, warm
+                            highlight moments
+
+BACKGROUND
+  Warm paper tone rather than clinical white. Documents and web
+  surfaces should feel warm and editorial, not sterile.
+
+
+6. TYPOGRAPHY
+----------------------------------------------------------------
+  Display / headlines:   Fraunces (serif — editorial, premium)
+  Body text:             Archivo (clean modern sans-serif)
+  Labels / data / mono:  Spline Sans Mono
+
+Type should be easy to read at small sizes (business cards,
+website headers, signage). Keep hierarchy simple: one display
+face, one body face, mono for numbers and labels only.
+
+
+7. LOGO
+----------------------------------------------------------------
+Status: final logo direction not yet selected. Two design rounds
+(15 concepts total) exist in /mnt/user-data/outputs/vouch_logos/.
+
+Requirements for the final mark, whichever is chosen:
+- Icon + wordmark combination; icon must work standalone as a
+  32px favicon/app icon
+- Must reproduce cleanly in single-color/black (one-ink print)
+- No gradients or fine detail that breaks down at small sizes
+- Square-ish composition, transparent or white background
+- Avoid literal clip-art tropes (generic map-pin-with-star)
+
+Concept themes explored so far: verification marks (pin-check,
+shield/seal), local presence (storefront, anchor), growth
+(sprout, peak, upward mark), and connection (linked rings,
+signal rings).
+
+
+8. VOICE & TONE
+----------------------------------------------------------------
+- Plain, confident, and warm. Write like a sharp local
+  professional, not a corporate marketer.
+- Benefit-led: "more calls, better reviews, easier to find" —
+  never "AI-powered n8n workflow automation."
+- Honest about limits. No fake urgency, no inflated claims, no
+  publishing placeholder results as if they were real data.
+- Numbers over adjectives. A star-rating gap stated plainly
+  ("you're at 3.8; the businesses winning your customers are at
+  4.6+") beats any slogan.
+- Natural prose over bullet spam in client-facing writing.
+
+
+9. DESIGN PRINCIPLES
+----------------------------------------------------------------
+- Editorial restraint. Clean typographic blocks, generous
+  spacing, disciplined color use.
+- One warm accent per element — clay OR ochre, never both.
+- Documents open with a real moment (cover page with the seal
+  mark), not a wall of data.
+- Motion (on the website) should feel premium and purposeful,
+  and always respect reduced-motion accessibility preferences.
+- Avoid default "AI agency" aesthetics: blue/purple glow,
+  acid-accent-on-black, generic gradient meshes.
+
+
+10. HARD RULES (NEVER BREAK)
+----------------------------------------------------------------
+1. No purple or blue anywhere in brand materials.
+2. Never ask clients for passwords — Manager-role access only.
+3. No guaranteed results in agreements or marketing.
+4. Backend/AI infrastructure stays off client-facing materials.
+5. Placeholder stats never ship as real claims.
+6. Clay and ochre never appear together in the same element.
+
+================================================================
+Questions about applying these guidelines? Keep it simple: if it
+looks hyped, cold, or techy — it's off-brand. If it looks honest,
+warm, and sharp — it's Vouch.
+================================================================
