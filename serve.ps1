@@ -8,6 +8,7 @@ $mime = @{
   ".html" = "text/html"; ".htm" = "text/html"; ".css" = "text/css"; ".js" = "application/javascript";
   ".png" = "image/png"; ".jpg" = "image/jpeg"; ".jpeg" = "image/jpeg"; ".gif" = "image/gif";
   ".svg" = "image/svg+xml"; ".txt" = "text/plain"; ".json" = "application/json"; ".ico" = "image/x-icon";
+  ".otf" = "font/otf"; ".ttf" = "font/ttf"; ".woff" = "font/woff"; ".woff2" = "font/woff2";
 }
 
 while ($listener.IsListening) {
