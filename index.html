@@ -10,16 +10,17 @@
     theme: {
       extend: {
         colors: {
-          paper: '#496A4D',
-          paper2: '#262626',
-          charcoal: '#262626',
-          ink: '#22201B',
-          alpine: '#2D5F3F',
-          alpinedark: '#262626',
+          oat: '#F5F1E8',
+          card: '#FCFBF7',
+          deep: '#1F3A2E',
+          ink: '#1B2620',
+          subtext: '#5C6B60',
+          mist: '#A9BCAF',
+          forest: '#2E4B3F',
+          honey: '#CF9640',
+          brown: '#3D2A08',
           sage: '#5C9C6B',
           clay: '#A6432E',
-          ochre: '#A87F2A',
-          bone: '#F2EBE3',
         },
         fontFamily: {
           display: ['Inter', 'sans-serif'],
@@ -57,7 +58,7 @@
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   }
-  body { background: #496A4D; font-family: 'Inter', sans-serif; font-weight: 400; }
+  body { background: #F5F1E8; font-family: 'Inter', sans-serif; font-weight: 400; }
   .font-display { font-family: 'Inter', sans-serif; font-weight: 600 !important; }
   .font-mono { font-weight: 600 !important; }
 
@@ -81,31 +82,31 @@
   }
 
   .btn-primary {
-    background: #2D5F3F;
-    color: #F2EBE3;
+    background: #CF9640;
+    color: #3D2A08;
     transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1), background-color 0.35s;
   }
-  .btn-primary:hover { background: #1E4429; transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(45,95,63,0.55); }
-  .btn-primary:active { transform: translateY(0); box-shadow: 0 4px 10px -4px rgba(45,95,63,0.5); }
-  .btn-primary:focus-visible { outline: 2px solid #A87F2A; outline-offset: 3px; }
+  .btn-primary:hover { background: #B8822F; transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(207,150,64,0.55); }
+  .btn-primary:active { transform: translateY(0); box-shadow: 0 4px 10px -4px rgba(207,150,64,0.5); }
+  .btn-primary:focus-visible { outline: 2px solid #2E4B3F; outline-offset: 3px; }
 
   .btn-secondary {
-    border: 1.5px solid #F2EBE3;
-    color: #F2EBE3;
+    border: 1.5px solid rgba(46,75,63,0.4);
+    color: #2E4B3F;
     transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background-color 0.35s, color 0.35s;
   }
-  .btn-secondary:hover { background: #F2EBE3; color: #496A4D; transform: translateY(-2px); }
+  .btn-secondary:hover { background: #2E4B3F; color: #F5F1E8; transform: translateY(-2px); }
   .btn-secondary:active { transform: translateY(0); }
-  .btn-secondary:focus-visible { outline: 2px solid #A87F2A; outline-offset: 3px; }
+  .btn-secondary:focus-visible { outline: 2px solid #CF9640; outline-offset: 3px; }
 
-  .nav-link { position: relative; color: #F2EBE3; }
+  .nav-link { position: relative; color: #2E4B3F; }
   .nav-link::after {
     content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px;
-    background: #A87F2A; transform: scaleX(0); transform-origin: left;
+    background: #CF9640; transform: scaleX(0); transform-origin: left;
     transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
   }
   .nav-link:hover::after { transform: scaleX(1); }
-  .nav-link:focus-visible { outline: 2px solid #A87F2A; outline-offset: 4px; border-radius: 2px; }
+  .nav-link:focus-visible { outline: 2px solid #CF9640; outline-offset: 4px; border-radius: 2px; }
 
   .card-hover { transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s cubic-bezier(0.16,1,0.3,1); }
   .card-hover:hover { transform: translateY(-4px); }
@@ -121,21 +122,21 @@
   .faq-icon { transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); }
   .faq-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1); }
 
-  ::selection { background: #A87F2A; color: #F2EBE3; }
+  ::selection { background: #CF9640; color: #3D2A08; }
 
   .stamp {
-    border: 1.5px solid rgba(242,235,227,0.5);
-    color: #F2EBE3;
+    border: 1.5px solid rgba(245,241,232,0.35);
+    color: #F5F1E8;
   }
 
   /* Audit lead-capture form */
   #audit-form-card, #audit-thankyou {
     max-width: 480px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: #FCFBF7;
     border-radius: 16px;
     padding: 32px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
     text-align: left;
     font-family: 'Inter', sans-serif;
   }
@@ -143,7 +144,7 @@
   .audit-field:last-of-type { margin-bottom: 0; }
   .audit-label {
     display: block;
-    color: #6B7280;
+    color: #5C6B60;
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 6px;
@@ -153,24 +154,24 @@
   .audit-input, .audit-select {
     display: block;
     width: 100%;
-    border: 1px solid #D7D9D6;
+    border: 1px solid #D9DFDA;
     border-radius: 8px;
     padding: 12px 14px;
     font-size: 15px;
     background: #FFFFFF;
-    color: #22201B;
+    color: #1B2620;
     font-family: inherit;
     transition: border-color 0.15s ease;
   }
   .audit-input:focus, .audit-select:focus {
     outline: none;
-    border: 2px solid #2D5F3F;
+    border: 2px solid #2E4B3F;
     padding: 11px 13px;
   }
   .audit-select {
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%236B7280' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%235C6B60' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 14px center;
     padding-right: 36px;
@@ -188,26 +189,26 @@
     margin-top: 8px;
     font-size: 15px;
     font-weight: 700;
-    background: #2D5F3F;
-    color: #FFFFFF;
+    background: #CF9640;
+    color: #3D2A08;
     font-family: inherit;
     transition: background-color 0.15s ease;
   }
-  .audit-submit:hover:not(:disabled) { background: #234A33; }
+  .audit-submit:hover:not(:disabled) { background: #B8822F; }
   .audit-submit:disabled { opacity: 0.6; cursor: not-allowed; }
-  .audit-hint { text-align: center; color: #9CA3A0; font-size: 12px; margin-top: 10px; }
+  .audit-hint { text-align: center; color: #8B9A8F; font-size: 12px; margin-top: 10px; }
   .audit-formerror { color: #A6432E; font-size: 13px; margin-top: 12px; text-align: center; }
-  #audit-thankyou p { color: #2D5F3F; font-weight: 700; font-size: 17px; line-height: 1.6; text-align: center; }
+  #audit-thankyou p { color: #2E4B3F; font-weight: 700; font-size: 17px; line-height: 1.6; text-align: center; }
 </style>
 
-<body class="bg-paper text-bone antialiased">
+<body class="bg-oat text-ink antialiased">
 
   <!-- NAV -->
-  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-bone/10">
+  <header class="sticky top-0 z-50 bg-oat/90 backdrop-blur-sm border-b border-ink/10">
     <div class="max-w-6xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
       <a href="#top" class="flex items-center gap-2.5 group">
         <img src="brand_assets/logo.png" alt="Vouch" class="h-9 w-9 object-contain transition-transform duration-300 group-hover:-rotate-6">
-        <span class="font-display text-2xl tracking-tight text-bone">Vouch</span>
+        <span class="font-display text-2xl tracking-tight text-forest">Vouch</span>
       </a>
       <nav class="hidden md:flex items-center gap-9 text-[0.95rem]">
         <a href="#problem" class="nav-link py-1">What we fix</a>
@@ -223,13 +224,13 @@
     <!-- HERO -->
     <section class="relative overflow-hidden">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28">
-        <p class="font-mono text-xs sm:text-sm tracking-[0.18em] uppercase text-bone mb-6 reveal">Long Beach, CA — Google Business Profiles</p>
+        <p class="font-mono text-xs sm:text-sm tracking-[0.18em] uppercase text-forest mb-6 reveal">Long Beach, CA — Google Business Profiles</p>
         <h1 class="font-display text-[2.75rem] leading-[1.05] sm:text-6xl lg:text-7xl tracking-[-0.02em] max-w-4xl reveal" style="transition-delay:0.05s">
           Get found.<br>
           Get chosen.<br>
-          <span class="italic text-bone">Get reviewed.</span>
+          <span class="italic text-forest">Get reviewed.</span>
         </h1>
-        <p class="mt-7 max-w-xl text-lg leading-[1.7] text-bone/80 reveal" style="transition-delay:0.1s">
+        <p class="mt-7 max-w-xl text-lg leading-[1.7] text-subtext reveal" style="transition-delay:0.1s">
           We clean up and manage your Google Business Profile so more of the people searching nearby actually pick up the phone. Plain language, honest pricing, and we never touch your passwords.
         </p>
         <div class="mt-9 flex flex-wrap gap-4 reveal" style="transition-delay:0.15s">
@@ -238,39 +239,39 @@
         </div>
 
         <!-- Signature: rating-gap comparison -->
-        <div class="mt-16 max-w-2xl rounded-2xl bg-charcoal text-bone p-7 sm:p-9 shadow-deep grain grain-dark reveal" style="transition-delay:0.2s">
-          <p class="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-bone/50 mb-6">The gap we close</p>
+        <div class="mt-16 max-w-2xl rounded-2xl bg-deep text-oat p-7 sm:p-9 shadow-deep grain grain-dark reveal" style="transition-delay:0.2s">
+          <p class="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-mist mb-6">The gap we close</p>
 
           <div class="mb-6">
             <div class="flex items-end justify-between mb-2">
-              <span class="text-sm text-bone/70">Your profile, today</span>
-              <span class="font-mono text-2xl font-medium text-ochre">3.8<span class="text-sm text-bone/50">★</span></span>
+              <span class="text-sm text-mist">Your profile, today</span>
+              <span class="font-mono text-2xl font-medium text-honey">3.8<span class="text-sm text-mist">★</span></span>
             </div>
-            <div class="h-2.5 rounded-full bg-bone/10 overflow-hidden">
-              <div class="bar-fill h-full rounded-full bg-ochre" style="width:76%"></div>
+            <div class="h-2.5 rounded-full bg-oat/10 overflow-hidden">
+              <div class="bar-fill h-full rounded-full bg-honey" style="width:76%"></div>
             </div>
           </div>
 
           <div>
             <div class="flex items-end justify-between mb-2">
-              <span class="text-sm text-bone/70">Who's winning your customers</span>
-              <span class="font-mono text-2xl font-medium text-sage">4.6<span class="text-sm text-bone/50">★+</span></span>
+              <span class="text-sm text-mist">Who's winning your customers</span>
+              <span class="font-mono text-2xl font-medium text-sage">4.6<span class="text-sm text-mist">★+</span></span>
             </div>
-            <div class="h-2.5 rounded-full bg-bone/10 overflow-hidden">
+            <div class="h-2.5 rounded-full bg-oat/10 overflow-hidden">
               <div class="bar-fill h-full rounded-full bg-sage" style="width:92%; transition-delay:0.15s"></div>
             </div>
           </div>
 
-          <p class="mt-6 text-sm text-bone/60 leading-relaxed">This is the gap we close. Every week it stays open is another week those calls go to someone else.</p>
+          <p class="mt-6 text-sm text-mist leading-relaxed">This is the gap we close. Every week it stays open is another week those calls go to someone else.</p>
         </div>
       </div>
     </section>
 
     <!-- CATEGORY STRIP -->
-    <section class="border-y border-bone/10 bg-paper2 py-10 overflow-hidden">
-      <p class="text-center font-mono text-xs tracking-[0.18em] uppercase text-bone/50 mb-6">Built for Long Beach small businesses</p>
+    <section class="border-y border-ink/10 bg-card py-10 overflow-hidden">
+      <p class="text-center font-mono text-xs tracking-[0.18em] uppercase text-subtext mb-6">Built for Long Beach small businesses</p>
       <div class="flex whitespace-nowrap">
-        <div class="marquee-track flex gap-14 pr-14 font-display text-2xl sm:text-3xl text-bone/70 italic">
+        <div class="marquee-track flex gap-14 pr-14 font-display text-2xl sm:text-3xl text-ink/70 italic">
           <span>Restaurants</span><span>·</span><span>Gyms</span><span>·</span><span>Salons</span><span>·</span><span>Auto Shops</span><span>·</span><span>Trades</span><span>·</span><span>Home Services</span><span>·</span>
           <span>Restaurants</span><span>·</span><span>Gyms</span><span>·</span><span>Salons</span><span>·</span><span>Auto Shops</span><span>·</span><span>Trades</span><span>·</span><span>Home Services</span><span>·</span>
         </div>
@@ -283,25 +284,25 @@
         <div>
           <p class="font-mono text-xs tracking-[0.18em] uppercase text-clay mb-5 reveal">What's actually broken</p>
           <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] reveal" style="transition-delay:0.05s">Your business is easy to find.<br>Just not by search engines.</h2>
-          <p class="mt-6 text-lg leading-[1.7] text-bone/80 reveal" style="transition-delay:0.1s">
+          <p class="mt-6 text-lg leading-[1.7] text-subtext reveal" style="transition-delay:0.1s">
             Wrong categories, stale photos, unanswered reviews sitting there for months — it's not that customers can't find you, it's that Google keeps showing them someone else first.
           </p>
           <ul class="mt-9 space-y-5 reveal" style="transition-delay:0.15s">
             <li class="flex gap-4">
-              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-bone/10 text-bone"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="text-bone/85 leading-[1.7]">Full profile audit — categories, hours, services, and attributes, corrected</span>
+              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest/10 text-forest"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="text-ink/80 leading-[1.7]">Full profile audit — categories, hours, services, and attributes, corrected</span>
             </li>
             <li class="flex gap-4">
-              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-bone/10 text-bone"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="text-bone/85 leading-[1.7]">Photos and posts kept current, every week, without you lifting a finger</span>
+              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest/10 text-forest"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="text-ink/80 leading-[1.7]">Photos and posts kept current, every week, without you lifting a finger</span>
             </li>
             <li class="flex gap-4">
-              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-bone/10 text-bone"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="text-bone/85 leading-[1.7]">Every review gets a real, professionally written response — good or bad</span>
+              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest/10 text-forest"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="text-ink/80 leading-[1.7]">Every review gets a real, professionally written response — good or bad</span>
             </li>
             <li class="flex gap-4">
-              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-bone/10 text-bone"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="text-bone/85 leading-[1.7]">Q&amp;A monitored, so a wrong answer doesn't sit there unanswered for months</span>
+              <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forest/10 text-forest"><svg width="13" height="10" viewBox="0 0 13 10" fill="none"><path d="M1 5L4.5 8.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="text-ink/80 leading-[1.7]">Q&amp;A monitored, so a wrong answer doesn't sit there unanswered for months</span>
             </li>
           </ul>
         </div>
@@ -309,21 +310,21 @@
         <!-- mock profile card -->
         <div class="reveal" style="transition-delay:0.1s">
           <div class="grid sm:grid-cols-2 gap-5">
-            <div class="rounded-2xl bg-white/60 border border-charcoal/10 p-5 shadow-card">
-              <p class="font-mono text-[0.65rem] tracking-[0.15em] uppercase text-charcoal/40 mb-3">Before</p>
-              <div class="h-24 rounded-lg bg-charcoal/10 mb-4"></div>
-              <div class="h-3 w-3/4 rounded bg-charcoal/15 mb-2"></div>
-              <div class="h-3 w-1/2 rounded bg-charcoal/10 mb-4"></div>
-              <div class="flex items-center gap-1 text-ochre text-sm mb-1">★★★☆☆ <span class="text-charcoal/40 font-mono text-xs ml-1">3.8 (41)</span></div>
-              <p class="text-xs text-charcoal/40 mt-3 leading-relaxed">Hours out of date · 2 photos · 6 unanswered reviews</p>
+            <div class="rounded-2xl bg-card border border-ink/10 p-5 shadow-card">
+              <p class="font-mono text-[0.65rem] tracking-[0.15em] uppercase text-ink/40 mb-3">Before</p>
+              <div class="h-24 rounded-lg bg-ink/10 mb-4"></div>
+              <div class="h-3 w-3/4 rounded bg-ink/15 mb-2"></div>
+              <div class="h-3 w-1/2 rounded bg-ink/10 mb-4"></div>
+              <div class="flex items-center gap-1 text-honey text-sm mb-1">★★★☆☆ <span class="text-ink/40 font-mono text-xs ml-1">3.8 (41)</span></div>
+              <p class="text-xs text-ink/40 mt-3 leading-relaxed">Hours out of date · 2 photos · 6 unanswered reviews</p>
             </div>
-            <div class="rounded-2xl bg-alpine text-bone p-5 shadow-lift card-hover sm:mt-8">
-              <p class="font-mono text-[0.65rem] tracking-[0.15em] uppercase text-bone/50 mb-3">After</p>
-              <div class="h-24 rounded-lg bg-bone/15 mb-4"></div>
-              <div class="h-3 w-3/4 rounded bg-bone/30 mb-2"></div>
-              <div class="h-3 w-1/2 rounded bg-bone/20 mb-4"></div>
-              <div class="flex items-center gap-1 text-sage text-sm mb-1">★★★★★ <span class="text-bone/50 font-mono text-xs ml-1">4.7 (128)</span></div>
-              <p class="text-xs text-bone/60 mt-3 leading-relaxed">Fresh weekly posts · 24 photos · every review answered</p>
+            <div class="rounded-2xl bg-deep text-oat p-5 shadow-lift card-hover sm:mt-8">
+              <p class="font-mono text-[0.65rem] tracking-[0.15em] uppercase text-mist mb-3">After</p>
+              <div class="h-24 rounded-lg bg-oat/15 mb-4"></div>
+              <div class="h-3 w-3/4 rounded bg-oat/30 mb-2"></div>
+              <div class="h-3 w-1/2 rounded bg-oat/20 mb-4"></div>
+              <div class="flex items-center gap-1 text-sage text-sm mb-1">★★★★★ <span class="text-mist font-mono text-xs ml-1">4.7 (128)</span></div>
+              <p class="text-xs text-mist mt-3 leading-relaxed">Fresh weekly posts · 24 photos · every review answered</p>
             </div>
           </div>
         </div>
@@ -331,7 +332,7 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how" class="bg-charcoal text-bone py-24 lg:py-32 grain grain-dark relative">
+    <section id="how" class="bg-deep text-oat py-24 lg:py-32 grain grain-dark relative">
       <div class="max-w-6xl mx-auto px-6 lg:px-8">
         <p class="font-mono text-xs tracking-[0.18em] uppercase text-sage mb-5 reveal">How it works</p>
         <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] max-w-2xl reveal" style="transition-delay:0.05s">Three steps. No retainer to start.</h2>
@@ -340,17 +341,17 @@
           <div class="reveal" style="transition-delay:0.05s">
             <p class="font-mono text-sm text-sage mb-4">01</p>
             <h3 class="font-display text-2xl mb-3">Audit</h3>
-            <p class="text-bone/70 leading-[1.7]">We go through your profile top to bottom and show you exactly what's costing you visibility. Flat fee, no commitment required to start.</p>
+            <p class="text-mist leading-[1.7]">We go through your profile top to bottom and show you exactly what's costing you visibility. Flat fee, no commitment required to start.</p>
           </div>
           <div class="reveal" style="transition-delay:0.15s">
             <p class="font-mono text-sm text-sage mb-4">02</p>
             <h3 class="font-display text-2xl mb-3">Optimize</h3>
-            <p class="text-bone/70 leading-[1.7]">We fix categories, hours, services, and photos, then set up a system that asks real customers for real reviews.</p>
+            <p class="text-mist leading-[1.7]">We fix categories, hours, services, and photos, then set up a system that asks real customers for real reviews.</p>
           </div>
           <div class="reveal" style="transition-delay:0.25s">
             <p class="font-mono text-sm text-sage mb-4">03</p>
             <h3 class="font-display text-2xl mb-3">Manage</h3>
-            <p class="text-bone/70 leading-[1.7]">Every month, we keep the profile current and respond to every review, so you don't have to think about it again.</p>
+            <p class="text-mist leading-[1.7]">Every month, we keep the profile current and respond to every review, so you don't have to think about it again.</p>
           </div>
         </div>
       </div>
@@ -360,129 +361,141 @@
     <section class="max-w-6xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
       <div class="grid lg:grid-cols-2 gap-14 items-center">
         <div class="reveal">
-          <p class="font-mono text-xs tracking-[0.18em] uppercase text-bone mb-5">Respect for security</p>
+          <p class="font-mono text-xs tracking-[0.18em] uppercase text-forest mb-5">Respect for security</p>
           <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em]">We will never ask you for your password.</h2>
-          <p class="mt-6 text-lg leading-[1.7] text-bone/80">Google gives every business owner a way to add a manager to their profile without ever handing over a login. That's the only access we ask for. If anyone else asks you for a password to "optimize your listing," that's your sign to hang up.</p>
+          <p class="mt-6 text-lg leading-[1.7] text-subtext">Google gives every business owner a way to add a manager to their profile without ever handing over a login. That's the only access we ask for. If anyone else asks you for a password to "optimize your listing," that's your sign to hang up.</p>
         </div>
-        <div class="rounded-2xl bg-alpinedark text-bone p-9 sm:p-11 shadow-deep reveal" style="transition-delay:0.1s">
+        <div class="rounded-2xl bg-deep text-oat p-9 sm:p-11 shadow-deep reveal" style="transition-delay:0.1s">
           <div class="inline-flex items-center justify-center h-14 w-14 rounded-full stamp mb-7">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 16.5 16.5 20.5 12 22C7.5 20.5 4 16.5 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12L11 14L15.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <p class="font-mono text-xs tracking-[0.18em] uppercase text-bone/50 mb-3">Manager-role access only</p>
+          <p class="font-mono text-xs tracking-[0.18em] uppercase text-mist mb-3">Manager-role access only</p>
           <p class="text-2xl font-display leading-snug">Revoke it anytime. We can never lock you out of your own listing.</p>
         </div>
       </div>
     </section>
 
     <!-- THE MATH -->
-    <section class="bg-paper2 py-24 lg:py-32 border-y border-bone/10">
+    <section class="bg-card py-24 lg:py-32 border-y border-ink/10">
       <div class="max-w-6xl mx-auto px-6 lg:px-8">
-        <p class="font-mono text-xs tracking-[0.18em] uppercase text-alpine mb-5 reveal text-center">Numbers over adjectives</p>
+        <p class="font-mono text-xs tracking-[0.18em] uppercase text-forest mb-5 reveal text-center">Numbers over adjectives</p>
         <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] text-center max-w-3xl mx-auto reveal" style="transition-delay:0.05s">We don't promise a result. Here's the math that decides who gets the call.</h2>
 
         <div class="mt-16 grid sm:grid-cols-3 gap-6">
-          <div class="rounded-2xl bg-white/60 border border-charcoal/10 p-8 text-center card-hover shadow-card reveal" style="transition-delay:0.05s">
-            <p class="font-mono text-4xl sm:text-5xl text-alpine">3.8 → 4.6<span class="text-2xl align-top">+</span></p>
-            <p class="mt-4 text-sm text-charcoal/70 leading-relaxed">Star rating, typical vs. optimized</p>
+          <div class="rounded-2xl bg-white border border-ink/10 p-8 text-center card-hover shadow-card reveal" style="transition-delay:0.05s">
+            <p class="font-mono text-4xl sm:text-5xl text-forest">3.8 → 4.6<span class="text-2xl align-top">+</span></p>
+            <p class="mt-4 text-sm text-subtext leading-relaxed">Star rating, typical vs. optimized</p>
           </div>
-          <div class="rounded-2xl bg-white/60 border border-charcoal/10 p-8 text-center card-hover shadow-card reveal" style="transition-delay:0.15s">
-            <p class="font-mono text-4xl sm:text-5xl text-alpine">2 → 18<span class="text-2xl align-top">+</span></p>
-            <p class="mt-4 text-sm text-charcoal/70 leading-relaxed">New reviews per 90 days</p>
+          <div class="rounded-2xl bg-white border border-ink/10 p-8 text-center card-hover shadow-card reveal" style="transition-delay:0.15s">
+            <p class="font-mono text-4xl sm:text-5xl text-forest">2 → 18<span class="text-2xl align-top">+</span></p>
+            <p class="mt-4 text-sm text-subtext leading-relaxed">New reviews per 90 days</p>
           </div>
-          <div class="rounded-2xl bg-white/60 border border-charcoal/10 p-8 text-center card-hover shadow-card reveal" style="transition-delay:0.25s">
-            <p class="font-mono text-4xl sm:text-5xl text-alpine">12% → 100%</p>
-            <p class="mt-4 text-sm text-charcoal/70 leading-relaxed">Reviews with a real response</p>
+          <div class="rounded-2xl bg-white border border-ink/10 p-8 text-center card-hover shadow-card reveal" style="transition-delay:0.25s">
+            <p class="font-mono text-4xl sm:text-5xl text-forest">12% → 100%</p>
+            <p class="mt-4 text-sm text-subtext leading-relaxed">Reviews with a real response</p>
           </div>
         </div>
-        <p class="mt-8 text-center font-mono text-xs text-bone/45 max-w-xl mx-auto leading-relaxed reveal">Illustrative example based on typical Long Beach listings we've audited — not a guarantee of results for any specific business.</p>
+        <p class="mt-8 text-center font-mono text-xs text-subtext/80 max-w-xl mx-auto leading-relaxed reveal">Illustrative example based on typical Long Beach listings we've audited — not a guarantee of results for any specific business.</p>
       </div>
     </section>
 
     <!-- PRICING -->
     <section id="pricing" class="max-w-6xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
-      <p class="font-mono text-xs tracking-[0.18em] uppercase text-bone mb-5 reveal text-center">Pricing</p>
-      <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] text-center reveal" style="transition-delay:0.05s">Two simple charges. Nothing hidden.</h2>
+      <p class="font-mono text-xs tracking-[0.18em] uppercase text-forest mb-5 reveal text-center">Pricing</p>
+      <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] text-center reveal" style="transition-delay:0.05s">Simple pricing. Nothing hidden.</h2>
 
-      <div class="mt-16 grid md:grid-cols-2 gap-7">
-        <div class="rounded-2xl bg-charcoal text-bone p-9 shadow-deep grain grain-dark card-hover reveal" style="transition-delay:0.05s">
+      <div class="mt-16 grid md:grid-cols-3 gap-7 items-stretch">
+        <div class="rounded-2xl bg-deep text-oat p-9 shadow-deep grain grain-dark card-hover reveal" style="transition-delay:0.05s">
           <p class="font-mono text-xs tracking-[0.15em] uppercase text-sage mb-3">Monthly</p>
           <h3 class="font-display text-3xl mb-2">Management</h3>
-          <p class="font-mono text-2xl text-bone mb-5">$129.99<span class="text-sm text-bone/50"> /mo</span></p>
-          <p class="text-bone/75 leading-[1.7] mb-6">Ongoing upkeep and review management, so your profile stays sharp without a second thought.</p>
-          <ul class="space-y-3 text-sm text-bone/80">
+          <p class="font-mono text-2xl text-oat mb-5">$169.99<span class="text-sm text-mist"> /mo</span></p>
+          <p class="text-mist leading-[1.7] mb-6">Ongoing upkeep and review management, so your profile stays sharp without a second thought.</p>
+          <ul class="space-y-3 text-sm text-mist">
             <li class="flex gap-3"><span class="text-sage">—</span>Weekly posts and photo refreshes</li>
             <li class="flex gap-3"><span class="text-sage">—</span>Every review answered within 48 hours</li>
             <li class="flex gap-3"><span class="text-sage">—</span>Monthly report, written in plain English</li>
           </ul>
-          <a href="#audit" class="mt-8 inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold bg-bone text-charcoal transition-transform duration-300 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ochre focus-visible:outline-offset-2">Get a quote</a>
         </div>
-        <div class="rounded-2xl border border-bone/15 p-9 card-hover shadow-card reveal" style="transition-delay:0.15s">
+        <div class="rounded-2xl bg-card border border-ink/10 p-9 card-hover shadow-card reveal" style="transition-delay:0.15s">
+          <p class="font-mono text-xs tracking-[0.15em] uppercase text-forest mb-3">One-Time</p>
+          <h3 class="font-display text-3xl mb-2">Setup Fee</h3>
+          <p class="font-mono text-2xl text-ink mb-5">$49.99<span class="text-sm text-subtext"> one-time</span></p>
+          <p class="text-subtext leading-[1.7] mb-6">A one-time setup to get your profile cleaned up, optimized, and ready before monthly management begins.</p>
+          <ul class="space-y-3 text-sm text-ink/80">
+            <li class="flex gap-3"><span class="text-forest">—</span>Full profile audit and cleanup</li>
+            <li class="flex gap-3"><span class="text-forest">—</span>Optimized business info and categories</li>
+            <li class="flex gap-3"><span class="text-forest">—</span>Manager access setup — no passwords needed</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-card border border-ink/10 p-9 card-hover shadow-card reveal" style="transition-delay:0.25s">
           <p class="font-mono text-xs tracking-[0.15em] uppercase text-clay mb-3">Optional</p>
           <h3 class="font-display text-3xl mb-2">Add-On Services</h3>
-          <p class="font-mono text-2xl text-bone mb-5">$59.99<span class="text-sm text-bone/50"> /mo per platform</span></p>
-          <p class="text-bone/75 leading-[1.7] mb-6">Beyond Google — we'll manage your other listings with the same care, so reviews everywhere get a real response.</p>
-          <ul class="space-y-3 text-sm text-bone/80">
-            <li class="flex gap-3"><span class="text-ochre">—</span>Yelp Business Profile management</li>
-            <li class="flex gap-3"><span class="text-ochre">—</span>Facebook Business Profile management</li>
-            <li class="flex gap-3"><span class="text-ochre">—</span>Add any combination — billed per extra platform</li>
+          <p class="font-mono text-2xl text-ink mb-5">$59.99<span class="text-sm text-subtext"> /mo per platform</span></p>
+          <p class="text-subtext leading-[1.7] mb-6">Beyond Google — we'll manage your other listings with the same care, so reviews everywhere get a real response.</p>
+          <ul class="space-y-3 text-sm text-ink/80">
+            <li class="flex gap-3"><span class="text-honey">—</span>Yelp Business Profile management</li>
+            <li class="flex gap-3"><span class="text-honey">—</span>Facebook Business Profile management</li>
+            <li class="flex gap-3"><span class="text-honey">—</span>Add any combination — billed per extra platform</li>
           </ul>
-          <a href="#audit" class="btn-secondary mt-8 inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold">Get a quote</a>
         </div>
       </div>
-      <p class="mt-6 text-center text-sm text-bone/50 reveal">Month-to-month management. Cancel anytime — no contracts you can't read.</p>
+      <div class="mt-10 flex justify-center reveal">
+        <a href="#audit" class="btn-primary inline-flex items-center rounded-full px-10 py-4 text-base font-semibold">Get a quote</a>
+      </div>
+      <p class="mt-6 text-center text-sm text-subtext reveal">Month-to-month management. Cancel anytime — no contracts you can't read.</p>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="bg-paper2 py-24 lg:py-32 border-y border-bone/10">
+    <section id="faq" class="bg-card py-24 lg:py-32 border-y border-ink/10">
       <div class="max-w-3xl mx-auto px-6 lg:px-8">
-        <p class="font-mono text-xs tracking-[0.18em] uppercase text-alpine mb-5 reveal text-center">FAQ</p>
+        <p class="font-mono text-xs tracking-[0.18em] uppercase text-forest mb-5 reveal text-center">FAQ</p>
         <h2 class="font-display text-4xl sm:text-5xl leading-[1.08] tracking-[-0.02em] text-center reveal" style="transition-delay:0.05s">Straight answers to the questions we actually get.</h2>
 
-        <div class="mt-14 divide-y divide-bone/15 reveal" style="transition-delay:0.1s">
+        <div class="mt-14 divide-y divide-ink/10 reveal" style="transition-delay:0.1s">
           <div class="py-2">
             <button class="faq-toggle w-full flex items-center justify-between gap-4 py-5 text-left" aria-expanded="false">
               <span class="font-display text-xl">Do you need my Google password?</span>
-              <span class="faq-icon shrink-0 text-2xl text-alpine leading-none">+</span>
+              <span class="faq-icon shrink-0 text-2xl text-forest leading-none">+</span>
             </button>
-            <div class="faq-panel"><p class="pb-6 text-bone/75 leading-[1.7] pr-8">No. Never. You add us as a Manager on your Business Profile — you can revoke that access anytime, and we can never lock you out of your own listing.</p></div>
+            <div class="faq-panel"><p class="pb-6 text-subtext leading-[1.7] pr-8">No. Never. You add us as a Manager on your Business Profile — you can revoke that access anytime, and we can never lock you out of your own listing.</p></div>
           </div>
           <div class="py-2">
             <button class="faq-toggle w-full flex items-center justify-between gap-4 py-5 text-left" aria-expanded="false">
               <span class="font-display text-xl">Can you guarantee more 5-star reviews?</span>
-              <span class="faq-icon shrink-0 text-2xl text-alpine leading-none">+</span>
+              <span class="faq-icon shrink-0 text-2xl text-forest leading-none">+</span>
             </button>
-            <div class="faq-panel"><p class="pb-6 text-bone/75 leading-[1.7] pr-8">No, and anyone who guarantees that is lying to you. We build honest systems that make it easy for happy customers to leave a review — the results follow from there.</p></div>
+            <div class="faq-panel"><p class="pb-6 text-subtext leading-[1.7] pr-8">No, and anyone who guarantees that is lying to you. We build honest systems that make it easy for happy customers to leave a review — the results follow from there.</p></div>
           </div>
           <div class="py-2">
             <button class="faq-toggle w-full flex items-center justify-between gap-4 py-5 text-left" aria-expanded="false">
               <span class="font-display text-xl">How long does setup take?</span>
-              <span class="faq-icon shrink-0 text-2xl text-alpine leading-none">+</span>
+              <span class="faq-icon shrink-0 text-2xl text-forest leading-none">+</span>
             </button>
-            <div class="faq-panel"><p class="pb-6 text-bone/75 leading-[1.7] pr-8">Most audits and full optimizations are done within two weeks, depending on how much cleanup your profile needs.</p></div>
+            <div class="faq-panel"><p class="pb-6 text-subtext leading-[1.7] pr-8">Most audits and full optimizations are done within two weeks, depending on how much cleanup your profile needs.</p></div>
           </div>
           <div class="py-2">
             <button class="faq-toggle w-full flex items-center justify-between gap-4 py-5 text-left" aria-expanded="false">
               <span class="font-display text-xl">What if I already have a marketing agency?</span>
-              <span class="faq-icon shrink-0 text-2xl text-alpine leading-none">+</span>
+              <span class="faq-icon shrink-0 text-2xl text-forest leading-none">+</span>
             </button>
-            <div class="faq-panel"><p class="pb-6 text-bone/75 leading-[1.7] pr-8">We only work on your Google Business Profile and reviews. We're built to sit alongside whatever else you're doing, not replace it.</p></div>
+            <div class="faq-panel"><p class="pb-6 text-subtext leading-[1.7] pr-8">We only work on your Google Business Profile and reviews. We're built to sit alongside whatever else you're doing, not replace it.</p></div>
           </div>
           <div class="py-2">
             <button class="faq-toggle w-full flex items-center justify-between gap-4 py-5 text-left" aria-expanded="false">
               <span class="font-display text-xl">Do I need to sign a contract?</span>
-              <span class="faq-icon shrink-0 text-2xl text-alpine leading-none">+</span>
+              <span class="faq-icon shrink-0 text-2xl text-forest leading-none">+</span>
             </button>
-            <div class="faq-panel"><p class="pb-6 text-bone/75 leading-[1.7] pr-8">Setup is a flat one-time fee. Management is month-to-month — cancel anytime.</p></div>
+            <div class="faq-panel"><p class="pb-6 text-subtext leading-[1.7] pr-8">Setup is a flat one-time fee. Management is month-to-month — cancel anytime.</p></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FINAL CTA -->
-    <section id="audit" class="relative bg-alpinedark text-bone py-28 lg:py-36 grain grain-dark overflow-hidden">
+    <section id="audit" class="relative bg-deep text-oat py-28 lg:py-36 grain grain-dark overflow-hidden">
       <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative">
         <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl tracking-[-0.02em] reveal">This is Vouch.</h2>
-        <p class="mt-6 text-lg text-bone/75 max-w-xl mx-auto leading-[1.7] reveal" style="transition-delay:0.05s">Straightforward help for Long Beach businesses who'd rather be run well than look flashy.</p>
+        <p class="mt-6 text-lg text-mist max-w-xl mx-auto leading-[1.7] reveal" style="transition-delay:0.05s">Straightforward help for Long Beach businesses who'd rather be run well than look flashy.</p>
         <div class="mt-10 reveal" style="transition-delay:0.1s">
           <form id="audit-form" novalidate>
             <div id="audit-form-card">
@@ -543,41 +556,41 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-charcoal text-bone/70 py-16">
+  <footer class="bg-deep text-mist py-16">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <a href="#top" class="flex items-center gap-2.5 mb-4">
             <img src="brand_assets/logo.png" alt="Vouch" class="h-8 w-8 object-contain">
-            <span class="font-display text-xl text-bone">Vouch</span>
+            <span class="font-display text-xl text-oat">Vouch</span>
           </a>
           <p class="text-sm leading-relaxed">Long Beach, CA</p>
         </div>
         <div>
-          <p class="font-mono text-xs tracking-[0.15em] uppercase text-bone/40 mb-4">Services</p>
+          <p class="font-mono text-xs tracking-[0.15em] uppercase text-mist/70 mb-4">Services</p>
           <ul class="space-y-2.5 text-sm">
-            <li><a href="#problem" class="hover:text-bone transition-colors">Profile setup</a></li>
-            <li><a href="#how" class="hover:text-bone transition-colors">Ongoing management</a></li>
-            <li><a href="#problem" class="hover:text-bone transition-colors">Review management</a></li>
+            <li><a href="#problem" class="hover:text-oat transition-colors">Profile setup</a></li>
+            <li><a href="#how" class="hover:text-oat transition-colors">Ongoing management</a></li>
+            <li><a href="#problem" class="hover:text-oat transition-colors">Review management</a></li>
           </ul>
         </div>
         <div>
-          <p class="font-mono text-xs tracking-[0.15em] uppercase text-bone/40 mb-4">Company</p>
+          <p class="font-mono text-xs tracking-[0.15em] uppercase text-mist/70 mb-4">Company</p>
           <ul class="space-y-2.5 text-sm">
-            <li><a href="#how" class="hover:text-bone transition-colors">How it works</a></li>
-            <li><a href="#pricing" class="hover:text-bone transition-colors">Pricing</a></li>
-            <li><a href="#faq" class="hover:text-bone transition-colors">FAQ</a></li>
+            <li><a href="#how" class="hover:text-oat transition-colors">How it works</a></li>
+            <li><a href="#pricing" class="hover:text-oat transition-colors">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-oat transition-colors">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <p class="font-mono text-xs tracking-[0.15em] uppercase text-bone/40 mb-4">Contact</p>
+          <p class="font-mono text-xs tracking-[0.15em] uppercase text-mist/70 mb-4">Contact</p>
           <ul class="space-y-2.5 text-sm">
-            <li><a href="mailto:vouch.limited@gmail.com" class="hover:text-bone transition-colors">vouch.limited@gmail.com</a></li>
+            <li><a href="mailto:vouch.limited@gmail.com" class="hover:text-oat transition-colors">vouch.limited@gmail.com</a></li>
             <li>Long Beach, CA</li>
           </ul>
         </div>
       </div>
-      <div class="mt-14 pt-8 border-t border-bone/10 flex flex-col sm:flex-row justify-between gap-3 font-mono text-xs text-bone/40">
+      <div class="mt-14 pt-8 border-t border-oat/10 flex flex-col sm:flex-row justify-between gap-3 font-mono text-xs text-mist/70">
         <p>© 2026 Vouch Ltd.</p>
         <p>We never ask for your password.</p>
       </div>
